@@ -1,0 +1,158 @@
+/* General body styling */
+body {
+    margin: 0;
+    background-image: url('space_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    filter: brightness(100%);
+}
+
+/* Page content styling */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title styling */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+}
+
+/* Title2 styling */
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Subtitle styling */
+.subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Paragraph styling*/
+p {
+    text-indent: 3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    line-height: 1.5;
+}
+
+/* Image styling */
+.center-image {
+    display: block;
+    width: 80%;
+    margin: 5% auto;
+    object-fit: contain;
+}
+
+.bottom-left-image {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    object-fit: contain;
+    margin-bottom: 20%;
+    object-fit: contain;
+}
+
+.bottom-right-image {
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+    object-fit: contain;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    object-fit: contain;
+}
+
+/* Authors and date styling */
+.authors,
+.date {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Content wrapper styling */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* White rectangle styling */
+#white-rectangle {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 8px 0 8px -5px rgba(0, 0, 0, 0.5), inset -8px 0 8px -5px rgba(0, 0, 0, 0.5);
+    width: calc(8.5 * 96px);
+    /* 1 inch = 96 CSS pixels */
+    height: calc(11 * 96px);
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+/* Book container styling */
+#book-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* Book content styling */
+#book {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Navigation buttons styling */
+#prev-button,
+#next-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Next button positioning */
+#next-button {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+}
+
+/* Previous button positioning */
+#prev-button {
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+}
+
+.fade-effect {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
