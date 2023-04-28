@@ -12,51 +12,58 @@ body {
     min-height: 100vh;
     position: relative;
     filter: brightness(100%);
-  }
-  
+}
 
 /* White rectangle styling */
 #white-rectangle {
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 8px 0 8px -5px rgba(0, 0, 0, 0.5), inset -8px 0 8px -5px rgba(0, 0, 0, 0.5);
-    width: calc(8.5 * 96px);
-    /* 1 inch = 96 CSS pixels */
+    width: calc(8.5 * 96px); /* 1 inch = 96 CSS pixels */
     height: calc(11 * 96px);
-    max-width: 100%;
-    max-height: 100%;
+    max-width: calc(90vw);
+    max-height: calc(90vh);
     position: relative;
     overflow: auto;
+    overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
 
-
-/* Page content styling */
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Center Image styling */
+.center-image {
+    display: block;
+    width: 85%;
+    max-width: 80%;
+    margin: 5% auto;
+    object-fit: contain;
 }
+
+/* Bottom-Left Image styling */
+.bottom-left-image {
+    float: left;
+    width: 40%;
+    max-width: 100%;
+    margin-left: 5%;
+    object-fit: contain;
+    margin-bottom: 5%;
+    object-fit: contain;
+}
+
+/* Bottom - RightImage styling */
+.bottom-right-image {
+    float: left;
+    width: 40%;
+    max-width: 100%;
+    margin-right: 5%;
+    object-fit: contain;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    object-fit: contain;
+}
+
 
 /* Title styling */
 h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10%;
-}
-
-/* Title2 styling */
-h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     font-weight: bold;
@@ -72,39 +79,12 @@ h2 {
     text-align: center;
 }
 
-/* Paragraph styling*/
+/* Paragraph styling */
 p {
     text-indent: 3em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     line-height: 1.5;
-}
-
-/* Image styling */
-.center-image {
-    display: block;
-    width: 80%;
-    margin: 5% auto;
-    object-fit: contain;
-}
-
-.bottom-left-image {
-    float: left;
-    width: 40%;
-    margin-left: 5%;
-    object-fit: contain;
-    margin-bottom: 20%;
-    object-fit: contain;
-}
-
-.bottom-right-image {
-    float: left;
-    width: 40%;
-    margin-right: 5%;
-    object-fit: contain;
-    margin-bottom: 20%;
-    margin-left: 10%;
-    object-fit: contain;
 }
 
 /* Authors and date styling */
@@ -113,31 +93,19 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Content wrapper styling */
-.content-wrapper {
+/* Next and Previous buttons container */
+.nav-buttons-container {
+    position: relative;
+    bottom: 1%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     height: 100%;
-}
-
-/* Book container styling */
-#book-container {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-/* Book content styling */
-#book {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* Navigation buttons styling */
@@ -149,16 +117,50 @@ p {
     cursor: pointer;
 }
 
-/* Next button positioning */
-#next-button {
-    position: absolute;
-    right: 1%;
-    bottom: 1%;
-}
-
 /* Previous button positioning */
 #prev-button {
     position: absolute;
-    left: 1%;
-    bottom: 1%;
+    bottom: 0;
+    left: 5%;
+    text-align: left;
+}
+
+/* Next button positioning */
+#next-button {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    text-align: right;
+}
+
+  
+
+
+/* Add media queries for different screen sizes */
+@media (max-width: 1200px) {
+    #white-rectangle {
+        width: calc(7.5 * 96px);
+        height: calc(10 * 96px);
+    }
+}
+
+@media (max-width: 992px) {
+    #white-rectangle {
+        width: calc(6.5 * 96px);
+        height: calc(9 * 96px);
+    }
+}
+
+@media (max-width: 768px) {
+    #white-rectangle {
+        width: calc(5.5 * 96px);
+        height: calc(8 * 96px);
+    }
+}
+
+@media (max-width: 576px) {
+    #white-rectangle {
+        width: calc(4.5 * 96px);
+        height: calc(7 * 96px);
+    }
 }
