@@ -96,6 +96,7 @@ p {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
 }
 
 /* Next and Previous buttons container */
@@ -113,22 +114,22 @@ p {
 #next-button {
     background-color: white;
     border: 1px solid #ccc;
-    padding: 5px 10px;
+    padding: 5px 5px;
     cursor: pointer;
 }
 
 /* Previous button positioning */
 #prev-button {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: 3%;
     left: 5%;
     text-align: left;
 }
 
 /* Next button positioning */
 #next-button {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: 3%;
     right: 5%;
     text-align: right;
 }
