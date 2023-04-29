@@ -142,14 +142,14 @@ p {
     text-align: right;
 }
 
-/* Citation styling */
 .citation {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12px;
-    font-style: italic;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    font-size: 14px;
+    text-indent: -0.5in;
+    padding-left: 0.5in;
+    margin-bottom: 10px;
 }
+
 
 
 /* Add media queries for different screen sizes */
