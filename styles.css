@@ -34,7 +34,7 @@ body {
     display: block;
     width: 85%;
     max-width: 80%;
-    margin: 5% auto;
+    margin: auto auto;
     object-fit: contain;
 }
 
@@ -81,10 +81,19 @@ h1 {
 
 /* Paragraph styling */
 p {
-    text-indent: 3em;
+    text-indent: 2em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     line-height: 1.5;
+}
+
+/* Image description styling */
+.image-description {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 /* Authors and date styling */
